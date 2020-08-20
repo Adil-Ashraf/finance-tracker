@@ -15,7 +15,7 @@ class StocksController < ApplicationController
       end
     else
       respond_to do |format|
-        flash.now[:alert] = "Please type valid login"
+        flash.now[:alert] = "Please type something to see result"
         format.js { render partial: 'users/result' }
       end
     end
